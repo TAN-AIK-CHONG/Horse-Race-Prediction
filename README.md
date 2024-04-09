@@ -1,34 +1,23 @@
 # Predict Horse Race Winner
-We plan to use Linear Regression to predict the winner of a given horse race. The data can be used for sports betting.
+We plan to use Machine Learning to predict the winner of a horse race. The data can be used for sports betting.
 
 # Abstract
-Scrape data from Singapore Pools. Use data to predict race timings using Linear Regression Model and thus the implied winner of a horse race. Relevant data points include horse weight, horse age, horse trainer, barrier position, jockey, rider weight, venue, time of race and state of track.
+We scraped past horse performance data from Singapore Turf Club. Relevant data points include horse weight, barrier position, jockey, rider weight, track, horse rating, finish time, etc.
+
+We then used different ML models such as Multiple Linear Regression and Logistic Regression to predict a winner.
+
 This project is for NTU SC1015 Introduction to AI and ML course. 
 
-# Timeline
+# Data Scraping
+We scraped the data from Singapore Turf Club with Selenium.
 
-## Week 1
-Look into horse racing and data available to public
-Look into scikit-learn prediction models and other examples of sports prediction
+# Data Cleaning
+We removed any outliers that might affect the data. We also converted categorical data into numerical data through Label Encoding and Target Encoding so that they can be used for Regression.
 
-## Week 2
-Data collection (scraping from web)
-Data cleaning (get rid of outliers and irrelevant data columns)
+# Predictive Models
+We tried both Multiple Linear Regression as well as Logistic Regression models.
 
-## Week 3
-Exploratory analysis of data
+# Conclusion
 
-## Week 4 
-Machine learning: use of scikit-learn linear regression model
 
-## Week 5 
-Continue coding until finish
 
-## Week 6
-Final touch-ups
-
-# Data Sources
-Singapore Pools
-
-# Technologies
-Python (pandas, scikit-learn, matplotlib) for algorithm/linear regression and data cleaning and exploratory analysis
