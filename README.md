@@ -1,5 +1,5 @@
 # Predict Horse Race Winner 🏇
-We plan to use Machine Learning to make predictions on a horse race. The data can be used for sports betting. This project is for NTU SC1015 Introduction to AI and ML course. 
+We plan to use Machine Learning to make predictions on a horse race. The data can be used for sports betting. This project is for NTU SC1015 Introduction to AI and ML course. This readme document is only a summary. Please view the [Jupyter Notebook]() for a full picture.
 
 ## Libraries Used
 
@@ -76,7 +76,7 @@ We used Linear Regression from Scikit-Learn library to predict the Finish Time o
 
 We can compare the predicted Finish Time of all horses for an upcoming race, and thus deduce a probable winner. The quality of our fit can be seen below, where we plotted the predicted values against actual values for our test data set.
 
-![Image of test dataset]()
+![Image of test dataset](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/MLRtest.png)
 
 It is important to note that in a horse race, a tenth of a second could result in a different placing. As such, we have to keep the limitations of our model in mind.
 
@@ -85,7 +85,7 @@ We used Logistic Regression from Scikit-Learn library to predict whether a horse
 
 However, since the model is predicting for each individual horse, it might predict more/less than 3 horses that will finish Top 3 in a race, based on the given predictors. The quality of fit is can be seen below with a confusion matrix of our test data set.
 
-![Confusion Matrix]()
+![Confusion Matrix](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/cfmatrix_log.png)
 
 We are aware that while the model has a relatively high True Positive Rate, its False Positive Rate is also relatively high. This is due to the large class imbalance - the vast majority of horses do not finish top 3 in a race. We had to pick our poison: either suffer from a low True Positive Rate, or train our model with balanced class weights, which will lead to an increase in False Positive Rates as well. In the end, we chose the latter.
 
@@ -94,9 +94,9 @@ We used our models to predict a [race on 21 Apr 2024](https://racing.turfclub.co
 These were the real results:
 ![Image of real results](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/realresults.png)
 
-In the end, our linear regression models predicted 2/3 finishing horses, although it got the order of them wrong. Surprisingly however, it managed to predict the **exact** race time of both horses ('STOP THE WATER' and 'COOL SIXTY-ONE'). However, our logistic regression model ended up predicting 6 different horses to finish top 3. It predicted that both 'STOP THE WATER' and 'COOL SIXTY-ONE' would finish top 3, but it failed to predict that 'PACIFIC ATLANTIC' would finish top 3 as well. 
+In the end, our linear regression models predicted 2/3 finishing horses, although it got the order of them wrong. However, our logistic regression model ended up predicting 6 different horses to finish top 3. It predicted that both 'STOP THE WATER' and 'COOL SIXTY-ONE' would finish top 3, but it failed to predict that 'PACIFIC ATLANTIC' would finish top 3 as well. 
 
-![Image of predicted results]()
+![Image of predicted results](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/predicted21apr.png)
 
 Our regression models did not perform extremely well, but this was already expected when we evaluated the goodness of fit of our model. This is also a small sample size of one race, and the models performances on their test data sets are more indicative of how good they are.
 
