@@ -1,5 +1,5 @@
 # Predict Horse Race Winner 🏇
-We plan to use Machine Learning to make predictions on a horse race. The data can be used for sports betting. This project is for NTU SC1015 Introduction to AI and ML course. This readme document is only a summary. Please view the [Jupyter Notebook]() for a full picture.
+We plan to use Machine Learning to make predictions on a horse race. The data can be used for sports betting. This project is for NTU SC1015 Introduction to AI and ML course. This readme document is only a summary. Please view the [Jupyter Notebook](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/Horse_race_prediction_FINAL.ipynb) for a full picture. Download to view the file if unable to view it on the webpage due to its large size.
 
 ## Libraries Used
 
