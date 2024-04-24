@@ -45,7 +45,7 @@ We first prepared the data for Regression by converting all string data type val
 
 ![Image of before & after](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/numericcleaning.png)
 
-Furthermore, we converted categorical data into numerical data through One Hot Encoding and Target Encoding. For target encoding, we replace categorical variables with the mean of the target variable for each category. In this case, we have used Lengths Behind Winner (LBW) as the target variable. We chose LBW as it is a good indicator of the horse's performance in a race, as seen earlier from our EDA. Below is an image of some random horses their encoded values.
+Furthermore, we converted categorical data into numerical data through One Hot Encoding and Target Encoding. For target encoding, we replace categorical variables with the mean of the target variable for each category. In this case, we have used Lengths Behind Winner (LBW) as the target variable. We chose LBW as it is a good indicator of the horse's performance in a race, as seen earlier from our EDA. Below is an image of some random horses and their encoded values.
 
 ![Image of example of encoding](https://github.com/TAN-AIK-CHONG/Horse-Race-Prediction/blob/master/images/encodedexample.png)
 
